@@ -52,11 +52,11 @@ public class MessageTask extends AsyncTask<String,Void,Void> {
                     destination = temp.concat("<");
                 }
             }
-            String authId = "MAYJIZYTDLZWNLZWUXYZ";
-            String authToken = "NTIwOWQyZmQxNWUxMzhmM2E0ZmRkN2ZhZDc4ZTk0";
+            String authId = "<YOUR_AUTH_ID>";
+            String authToken = "<YOUR_AUTH_TOKEN>";
             RestAPI api = new RestAPI(authId, authToken, "v1");
             LinkedHashMap<String, String> parameters = new LinkedHashMap<String, String>();
-            parameters.put("src", "+919710757370"); // Sender's phone number with country code
+            parameters.put("src", "YOUR_PHONE_NUMBER"); // Sender's phone number with country code
             parameters.put("dst", destination); // Receiver's phone number with country code
             if(fuck){
                 parameters.put("text", prefs.getString("name","I") + " is going on correct path\n He is near  : " + param); // Your SMS text messeage
