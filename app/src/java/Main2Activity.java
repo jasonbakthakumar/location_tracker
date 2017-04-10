@@ -89,12 +89,7 @@ public class Main2Activity extends AppCompatActivity implements OnMapReadyCallba
                             String from = fromEditText.getText().toString().trim().replaceAll("\\s+", "+");
                             String to = toEditText.getText().toString().trim().replaceAll("\\s+", "+");
                             FetchURL FetchUrl = new FetchURL(classMap, Main2Activity.this);
-//                        String url = "http://maps.googleapis.com/maps/api/directions/json?"
-//                                + "origin=" + sourcePosition.latitude + "," + sourcePosition.longitude
-//                                + "&destination=" + destPosition.latitude + "," + destPosition.longitude
-//                                + "&sensor=false&units=metric&mode=" + "driving";
-                            //String url = "https://maps.googleapis.com/maps/api/directions/json?origin=75+9th+Ave+New+York,+NY&destination=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&key=AIzaSyADecUjvmqjdXl2crI8nDxMRF-wXZP_VNs";
-                            String urlNew = "https://maps.googleapis.com/maps/api/directions/json?origin=" + from + "&destination=" + to + "&key=AIzaSyADecUjvmqjdXl2crI8nDxMRF-wXZP_VNs";
+                           String urlNew = "https://maps.googleapis.com/maps/api/directions/json?origin=" + from + "&destination=" + to + "&key=<YOUR_API_KEY>";
 
                             FetchUrl.execute(urlNew);
                         }
