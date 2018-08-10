@@ -10,10 +10,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+//Main activity that will be the primary interaction of the user with the app
 public class MainActivity extends AppCompatActivity {
 
+    //nameEditText is the textbox used to enter the name of the user
     EditText nameEditText;
+	//phoneEditText is the textbox used by the user to enter his/her phone number
     EditText phoneEditText;
+	//ergisterButton is 
     Button registerButton;
 
     @Override
